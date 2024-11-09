@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    Testing of html;
+</head>
+<body>
+    <form>
+        <input type="text"placeholder="enter text">
+        <br>
+        <input type="password" placeholder="enter password">
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <br>
+        <br>
+        <label id="101">
+            <input type="radio" value="class graduation" name ="class" id="101">class graduation
+        </label>
+        <label id="102">
+            <input type="radio" value="university graduation" name ="class">university graduation
+        </label>
+
+    </form>
+    <div id="id1" class="group1">
+        <p>This is a paragraph inside group1.</p>
+    </div>
+    <div id="id2" class="group1">
+        <p>This is a paragraph inside group2.</p>
+    </div>
+    <!--id name is required for backend data calling and name is required for same type of html program controlling-->
+    <label for="math">
+        <input type="checkbox" value="math" id="math" name="subject" onclick="onlyOne(this)">
+        Math
+    </label>
+    <br>
+    <label for="Machine Learning">
+        <input type="checkbox" value="Machine Learning" id="machine_learning" name="subject" onclick="onlyOne(this)">
+        Machine Learning
+    </label>
+    <label for="AI Engineering">
+        <input type="checkbox" value="AI Engineering" id="ai_engineering" name="subject" onclick="onlyOne(this)">
+        AI Engineering
+    </label>
+    
+    <script>
+    function onlyOne(checkbox) {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"][name="subject"]');
+        checkboxes.forEach((cb) => {
+            if (cb !== checkbox) cb.checked = false;
+        });
+    }
+    </script>
+    <br>
+    <select id="101" name="country">country
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="India">India</option>
+    </select>
+    <br>
+    <textarea id="101" name="subject" placeholder="give us feedback" rows="4" cols="20"></textarea>
+    <br>
+    <input type="button" value="submit" id="101">
+
+    <br>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/pnlLW4KBVe8?si=_-pYjT8M412bNjsl" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
