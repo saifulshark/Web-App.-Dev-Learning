@@ -11,7 +11,7 @@ console.log(`Hello! My name is ${name} and my repsitories no. are as count of ${
 
 
 //CASE: 03- Object related String.
-//new keyword for object literals of javascript; 
+//'new' keyword for object literals of javascript; 
 //After taking String(It's Constructor('text"))
 
 const gameName= new String('Saifulire');
