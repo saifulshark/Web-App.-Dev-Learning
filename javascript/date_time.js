@@ -4,7 +4,7 @@ console.log(dateTime.getUTCMinutes());
 console.log(Date);
 console.log(typeof(dateTime));
 
-Dates
+//Dates
 
 let myDate = new Date()
 console.log(myDate.toString());
