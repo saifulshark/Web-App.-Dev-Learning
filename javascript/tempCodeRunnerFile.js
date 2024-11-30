@@ -1,2 +1,1 @@
-console.log(Date);
-console.log(typeof(Date));
+Object.freeze(JsUser)
