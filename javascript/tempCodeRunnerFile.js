@@ -1,1 +1,1 @@
-Object.freeze(JsUser)
+ // x=54;
