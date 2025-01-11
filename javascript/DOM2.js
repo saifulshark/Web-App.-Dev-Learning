@@ -1,0 +1,4 @@
+innerhtml
+getelement
+getelementById
+innertext
