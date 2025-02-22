@@ -4,18 +4,18 @@
 //Here comes IIFE: It does not rely on Global function, and gets done immediately. i.e.:DB server connection and response specially need this function for immediate execution.
 //Two types here: 1)Named 2)Normal(unnamed)
 
-//A normal function:
-var x="    Saiful Islam Sohan     ";//i.e. taken from an form/user signup etc.
-function clearName(){
-console.log(x.trim());
-}
-clearName(x);
-//normal to arrow:
-const trimAndLog = () => {
-  console.log(x.trim());
-};
+// //A normal function:
+// var x="    Saiful Islam Sohan     ";//i.e. taken from an form/user signup etc.
+// function clearName(){
+// console.log(x.trim());
+// }
+// clearName(x);
+// //normal to arrow:
+// const trimAndLog = () => {
+//   console.log(x.trim());
+// };
 
-trimAndLog();
+// trimAndLog();
 //IIFE
 //Structure is ()(): (function expression)(function execution)
 var x="    Saiful Islam Sohan     ";//i.e. taken from an form/user signup etc.
