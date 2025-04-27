@@ -1,3 +1,5 @@
+//Assigment on Middleware, finding out the count of req and calculation average time of response.
+
 const express = require('express');
 const app = express();
 //app.use(express.json()); // এটা এখন প্রয়োজন নেই যদি body ব্যবহার না করো
@@ -36,6 +38,7 @@ const averageTimeMiddleware = (req, res, next) => {
 
 //app.use(averageTimeMiddleware);
 
+//authentication middleware to check username and password
 const middleParam = (req, res, next) => {
     const username = req.headers.username;
     const password = req.headers.password;
@@ -45,6 +48,7 @@ const middleParam = (req, res, next) => {
     next();
 }
 
+//input validation middleware.
 const middleQueryKidney = (req, res, next) => {
     const kidneyid = req.query.kidneyid;
     if (kidneyid !== '1' && kidneyid !== '2') {
